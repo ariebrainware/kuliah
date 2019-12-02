@@ -45,6 +45,8 @@ def search(keyword):
     else:
         print("Tidak ada")
 
+# Replace keyword to text2
+
 
 def edit(keyword, text2):
     if (keyword in a):
@@ -64,8 +66,15 @@ def delete(keyword):
 
 
 print("------------------------")
-search("jeruk")
+x = input("Masukkan item dari array diatas yang ingin di CARI: ")
+search(x)
+print(a)
 print("------------------------")
-edit("anggur", "lemon")
+text1 = input("Masukkan item dari array diatas yang ingin di EDIT: ")
+text2 = input("Masukkan item pengganti: ")
+edit(text1, text2)
+print(a)
 print("------------------------")
-delete("mangga")
+x = input("Masukkan item dari array diatas yang ingin di HAPUS: ")
+delete(x)
+print(a)
